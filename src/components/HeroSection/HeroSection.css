@@ -3,10 +3,11 @@
     
 }
 
-.style{
+.cityBannar{
     background-image: url('../../../public/city_bannar.png');
     background-repeat: repeat-x;
     background-position: bottom;
+
 }
 
 .running-car-div{

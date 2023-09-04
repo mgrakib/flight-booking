@@ -7,7 +7,7 @@ import './HeroSection.css'
 import Image from "next/image";
 const HeroSection = () => {
 	return (
-		<div className=' style pt-14 pb-24 relative '>
+		<div className='cityBannar  pt-8 pb-16 relative '>
 			<Container>
 				<div className='py-10 flex items-center'>
 					<div className='w-[50%] flex flex-col gap-5 md:gap-10 items-start'>
@@ -99,6 +99,12 @@ const HeroSection = () => {
 											/>
 										</div>
 									</div>
+								</div>
+
+								<div className='flex items-center justify-center'>
+									<button className='py-2 w-[50%] mx-auto text-white bg-[#219051]'>
+										Find Ticket
+									</button>
 								</div>
 							</div>
 						</div>
