@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 
 					{/* cookis  */}
 				  <div className='absolute left-0 bottom-0 shadow-[-1px_-1px_4px_2px_rgba(0,0,0,.3)] mt-auto'>
-					  {/* <CookiesNotice /> */}
+					  <CookiesNotice />
 					</div>
 				</div>
 			</body>

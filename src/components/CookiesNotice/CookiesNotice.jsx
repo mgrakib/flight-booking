@@ -13,6 +13,7 @@ const CookiesNotice = () => {
 					you visit our website, including any other media form,
 					mobile website, or mobile application related or connected
 					to help customize the Site and improve your experience.
+					this is cange
 				</p>
 				<button className='text-gray-400'>learn more</button>
 
