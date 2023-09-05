@@ -12,9 +12,9 @@ const GetTicketsThreeSteps = () => {
 			<SectionTitle title={"Get Your Tickets With Just 3 Steps"} />
 			<Container>
 				<div className='mt-10'>
-					<div className='flex justify-between'>
-						<div className='w-[30%]'>
-							<div className='p-5 flex flex-col items-center bg-white shadow-[0_0_5px_rgba(0,0,0,.5)]'>
+					<div className='grid grid-cols-1 md:grid-cols-12 justify-between'>
+						<div className='col-span-1 md:col-span-4 bg-white shadow-[0_0_5px_rgba(0,0,0,.5)]'>
+							<div className='p-5 flex flex-col items-center '>
 								<div
 									className=' w-[100px] h-[100px] rounded-full 
 								bg-[#C3E7D2] shadow-[0_0_1px_8px_rgba(230,245,237)] relative flex items-center justify-center '
@@ -37,8 +37,8 @@ const GetTicketsThreeSteps = () => {
 							</div>
 						</div>
 
-						<div className='w-[30%]'>
-							<div className='p-5 flex flex-col items-center bg-white shadow-[0_0_5px_rgba(0,0,0,.5)]'>
+						<div className='col-span-1 md:col-span-4 bg-white shadow-[0_0_5px_rgba(0,0,0,.5)]'>
+							<div className='p-5 flex flex-col items-center '>
 								<div
 									className=' w-[100px] h-[100px] rounded-full 
 								bg-[#C3E7D2] shadow-[0_0_1px_8px_rgba(230,245,237)] relative flex items-center justify-center '
@@ -61,8 +61,8 @@ const GetTicketsThreeSteps = () => {
 							</div>
 						</div>
 
-						<div className='w-[30%]'>
-							<div className='p-5 flex flex-col items-center bg-white shadow-[0_0_5px_rgba(0,0,0,.5)]'>
+						<div className='col-span-1 md:col-span-4  bg-white shadow-[0_0_5px_rgba(0,0,0,.5)]'>
+							<div className='p-5 flex flex-col items-center'>
 								<div
 									className=' w-[100px] h-[100px] rounded-full 
 								bg-[#C3E7D2] shadow-[0_0_1px_8px_rgba(230,245,237)] relative flex items-center justify-center '

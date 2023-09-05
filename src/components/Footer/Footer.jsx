@@ -12,31 +12,31 @@ import union from "../../../public/union.svg";
 
 const Footer = () => {
     return (
-		<div className='bg-[#1E2A3F] py-10'>
+		<div className='bg-[#1E2A3F] md:py-10'>
 			<Container>
 				<div className='py-10 text-white flex gap-20'>
-					<div className='w-[100%] flex gap-10'>
+					<div className='w-[100%] grid grid-cols-1 md:grid-cols-12 gap-10'>
 						{/* Menu  */}
-						<div className='w-[10%]'>
+						<div className='col-span-1 md:col-span-1 '>
 							<p className='text-xl font-bold text-[#0E9E4D]'>
 								Menu
 							</p>
 
 							<div className='mt-4'>
 								<ul className='flex flex-col gap-3'>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										About
 									</li>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										FAQs
 									</li>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										Blog
 									</li>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										Contact
 									</li>
@@ -44,25 +44,25 @@ const Footer = () => {
 							</div>
 						</div>
 						{/* Policy */}
-						<div className='w-[16%]'>
+						<div className='col-span-1 md:col-span-2 md:ml-8'>
 							<p className='text-xl font-bold text-[#0E9E4D]'>
 								Policies
 							</p>
 							<div className='mt-4'>
 								<ul className='flex flex-col gap-3'>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										Privacy Policy
 									</li>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										Terms and Conditions
 									</li>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										Ticket Policies
 									</li>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										Refund Policy
 									</li>
@@ -70,21 +70,21 @@ const Footer = () => {
 							</div>
 						</div>
 						{/* Company */}
-						<div className='w-[10%]'>
+						<div className='col-span-1 md:col-span-2'>
 							<p className='text-xl font-bold text-[#0E9E4D]'>
 								Company
 							</p>
 							<div className='mt-4'>
 								<ul className='flex flex-col gap-3'>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										Support
 									</li>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										Partners
 									</li>
-									<li className='flex items-center gap-2 cursor-pointer hover:text-[#0E9E4D]'>
+									<li className='flex items-center gap-2  md:border-b md:border-gray-600 cursor-pointer hover:text-[#0E9E4D]'>
 										<AiOutlineDoubleRight className='hover:text-[#0E9E4D] duration-300' />{" "}
 										Jobs
 									</li>
@@ -92,7 +92,7 @@ const Footer = () => {
 							</div>
 						</div>
 						{/* Need Help ? */}
-						<div className='w-[24%]'>
+						<div className='col-span-1 md:col-span-3'>
 							<p className='text-xl font-bold text-[#0E9E4D]'>
 								Need Help ?
 							</p>
@@ -105,7 +105,7 @@ const Footer = () => {
 							</div>
 						</div>
 						{/* Payment Methods */}
-						<div className='w-[20%] '>
+						<div className='col-span-1 md:col-span-3 '>
 							<p className='text-xl font-bold text-[#0E9E4D]'>
 								Payment Methods
 							</p>
@@ -185,7 +185,7 @@ const Footer = () => {
 						</div>
 
 						<div>
-							<p className="text-white">© Copyright E-Bus Ltd.</p>
+							<p className='text-white'>© Copyright E-Bus Ltd.</p>
 						</div>
 					</div>
 				</div>

@@ -15,8 +15,8 @@ const WhyBookWithUs = () => {
 			<Container>
 				
 				<div className="mt-10">
-					<div className='grid grid-cols-12 gap-5 md:gap-10 text-center'>
-						<div className='col-span-4 flex flex-col items-center'>
+					<div className='grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-10 text-center'>
+						<div className='col-span-1 md:col-span-4 flex flex-col items-center'>
 							<div>
 								<Image
 									src={cheapTicket}
@@ -38,7 +38,7 @@ const WhyBookWithUs = () => {
 								</p>
 							</div>
 						</div>
-						<div className='col-span-4 flex flex-col items-center'>
+						<div className='col-span-1 md:col-span-4 flex flex-col items-center'>
 							<div>
 								<Image
 									src={experiance}
@@ -60,7 +60,7 @@ const WhyBookWithUs = () => {
 								</p>
 							</div>
 						</div>
-						<div className='col-span-4 flex flex-col items-center'>
+						<div className='col-span-1 md:col-span-4 flex flex-col items-center'>
 							<div>
 								<Image
 									src={online_payment}

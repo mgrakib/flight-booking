@@ -6,23 +6,24 @@ import runningBus from '../../../public/running_bus.png'
 import './HeroSection.css'
 import Image from "next/image";
 const HeroSection = () => {
+	
 	return (
-		<div className='cityBannar  pt-8 pb-16 relative '>
+		<div className='cityBannar pt-2 md:pt-8 pb-20 md:pb-16 relative'>
 			<Container>
-				<div className='py-10 flex items-center'>
-					<div className='w-[50%] flex flex-col gap-5 md:gap-10 items-start'>
-						<h1 className='text-5xl font-bold md:leading-[52px]'>
+				<div className='py-5 md:py-10 flex flex-col md:flex-row items-center justify-center gap-y-5 md:gap-y-0 text-center md:text-start'>
+					<div className='w-full md:w-[50%] flex flex-col gap-5 md:gap-10 items-center md:items-start'>
+						<h1 className='text-3xl md:text-5xl font-bold md:leading-[52px]'>
 							Get Your Ticket Online, Easy and Safely
 						</h1>
 
-						<button className='py-3 px-6 rounded bg-[#219051] text-white font-semibold'>
+						<button className='py-2 md:py-3 px-4 md:px-6 rounded bg-[#219051] text-white font-semibold'>
 							GET TICKET NOW
 						</button>
 					</div>
 
 					{/* from  */}
-					<div className='w-[50%] flex flex-col items-start gap-5 md:gap-10'>
-						<p className='text-3xl font-semibold'>
+					<div className='w-full md:w-[50%] flex flex-col items-center md:items-start gap-3 md:gap-10 '>
+						<p className='text-xl md:text-3xl font-semibold text-center '>
 							Choose Your Ticket
 						</p>
 

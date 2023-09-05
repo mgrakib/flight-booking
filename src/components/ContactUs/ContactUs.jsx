@@ -3,11 +3,12 @@ import Container from '../Container/Container';
 
 const ContactUs = () => {
     return (
-		<div className='py-10'>
+		<div className='md:py-10'>
 			<Container>
-				<div className='py-10 '>
-					<div className='flex items-center gap-5'>
-						<div className='w-[40%] text-center'>
+				<div className='md:py-10 '>
+					<div className='flex flex-col md:flex-row items-center gap-5'>
+						{/* from  */}
+						<div className='w-full md:w-[40%] text-center'>
 							<div className='p-5'>
 								<h1 className='text-3xl font-bold'>
 									Contact Us
@@ -49,7 +50,9 @@ const ContactUs = () => {
 								</div>
 							</div>
 						</div>
-						<div className='w-[60%] bg-blue-500 h-[60vh]'>
+
+						{/* map  */}
+						<div className='w-full md:w-[60%] bg-blue-500 h-[60vh]'>
 							<div className='w-full h-full bg-green-400'>
 								<iframe
 									src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.328095322884!2d90.36612287413844!3d23.806929386606047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d6f6b8c2ff%3A0x3b138861ee9c8c30!2sMirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1693841136486!5m2!1sen!2sbd'

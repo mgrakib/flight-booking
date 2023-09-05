@@ -11,8 +11,8 @@ const BlogPage = () => {
 			<SectionTitle title={"Recent Blog Post"} />
 			<Container>
 				<div className='py-10 '>
-					<div className='flex justify-between'>
-						<div className='w-[30%]  rounded group shadow-[0_0_2px_rgba(0,0,0,
+					<div className='flex flex-col md:flex-row justify-between md:gap-y-5 gap-y-0'>
+						<div className='w-full md:w-[30%]  rounded group shadow-[0_0_2px_rgba(0,0,0,
 							5)]'>
 							<div className='w-full flex overflow-hidden rounded'>
 								<Image
@@ -44,7 +44,7 @@ const BlogPage = () => {
 								</div>
 							</div>
 						</div>
-						<div className='w-[30%]  rounded group'>
+						<div className='w-full md:w-[30%]  rounded group'>
 							<div className='w-full flex overflow-hidden rounded'>
 								<Image
 									src='https://i.ibb.co/37tCmHj/image.png'
@@ -75,7 +75,7 @@ const BlogPage = () => {
 								</div>
 							</div>
 						</div>
-						<div className='w-[30%]  rounded group'>
+						<div className='w-full md:w-[30%]  rounded group'>
 							<div className='w-full flex overflow-hidden rounded'>
 								<Image
 									src='https://i.ibb.co/nMGMfwf/image.png'

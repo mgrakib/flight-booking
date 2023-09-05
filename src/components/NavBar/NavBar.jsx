@@ -1,42 +1,60 @@
-'use client'
-import React, { useState } from 'react';
-import Container from '../Container/Container';
-import logo from '../../../public/logo.png'
-import Image from 'next/image';
+/** @format */
+
+"use client";
+import React, { useContext, useEffect, useState } from "react";
+import Container from "../Container/Container";
+import logo from "../../../public/logo.png";
+import Image from "next/image";
+import { AuthContext } from "@/AuthProvider/AuthProvider";
+import "./NavBar.css";
 
 const NavBar = () => {
-	const [navDrowerIsOpen, setNavDrowerIsOpen]= useState(false)
-    const navItems = [
-        {
-            path: '/',
-            title: "Home"
-            
-        },
-        {
-            path: '/about',
-            title: "About"
-            
-        },
-        {
-            path: '/faqs',
-            title: "FAQs"
-            
-        },
-        {
-            path: '/blogs',
-            title: "Blog"
-            
-        },
-        {
-            path: '/contact',
-            title: "Contact"
-            
-        },
-	]
+	const { navDrowerIsOpen, setNavDrowerIsOpen } = useContext(AuthContext);
+	const navItems = [
+		{
+			path: "/",
+			title: "Home",
+		},
+		{
+			path: "/about",
+			title: "About",
+		},
+		{
+			path: "/faqs",
+			title: "FAQs",
+		},
+		{
+			path: "/blogs",
+			title: "Blog",
+		},
+		{
+			path: "/contact",
+			title: "Contact",
+		},
+	];
 	
-	console.log(navDrowerIsOpen)
-    return (
-		<div>
+	useEffect(() => {
+		const handleScroll = () => {
+			const header = document.getElementById("header");
+			header.classList.toggle("stickyNavbar", window.scrollY > 120);
+		};
+
+		// Attach the event listener when the component mounts
+		window.addEventListener("scroll", handleScroll);
+
+		// Clean up the event listener when the component unmounts
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []); 
+
+	console.log(navDrowerIsOpen);
+	
+	return (
+		<div
+			id='header'
+			className=' w-full z-50 bg-white border-b border-gray-200 py-2  duration-700'
+		>
 			<Container>
 				<div className='flex items-center justify-between'>
 					<div className='w-[120px]'>
@@ -67,7 +85,7 @@ const NavBar = () => {
 
 					<div
 						onClick={() => setNavDrowerIsOpen(!navDrowerIsOpen)}
-						className='  flex flex-col gap-[2px] relative md:hidden'
+						className='z-[9999]  flex flex-col gap-[2px] relative md:hidden'
 					>
 						<div
 							className={`w-[15px] h-[2px] ${
@@ -87,6 +105,16 @@ const NavBar = () => {
 					</div>
 				</div>
 			</Container>
+			<div
+				className={`min-w-[75%] h-[100vh] bg-yellow-500 duration-500 absolute top-0 z-[999] ${
+					navDrowerIsOpen ? "right-0" : "-right-[100%]"
+				}`}
+			></div>
+			<div
+				className={`absolute w-full h-[100vh] z-[998] ${
+					navDrowerIsOpen ? "scale-x-100" : "scale-x-0"
+				} bg-[#000000a1] top-0 left-0  duration-500 origin-right`}
+			></div>
 		</div>
 	);
 };
